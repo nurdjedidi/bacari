@@ -14,7 +14,7 @@
         <v-col cols="12">
           <v-carousel :show-arrows="false" height="auto" hide-delimiter-background delimiter-icon="mdi-circle" cycle
             interval="5000" class="testimonial-carousel">
-            <v-carousel-item>
+            <v-carousel-item v-for="(testimonial, index) in slides" :key="index">
               <v-row class="fill-height" align="center">
                 <v-col cols="12" md="10" lg="8" class="mx-auto">
                   <v-card class="testimonial-card mx-auto" elevation="3" rounded="lg">
@@ -25,18 +25,18 @@
                         </div>
                       </div>
                       <div class="text-center mb-6">
-                        <p class="text-h6 font-italic">{{ slide.quote }}</p>
+                        <p class="text-h6 font-italic">{{ testimonial.quote }}</p>
                       </div>
                       <div class="d-flex flex-column align-center">
-                        <Avatar :name="slide.name" class="avatar-large mb-3" />
+                        <Avatar :name="testimonial.name" class="avatar-large mb-3" />
                         <div class="text-center">
                           <div class="d-flex justify-center mb-1">
                             <v-icon v-for="n in 5" :key="n" color="amber-darken-2" size="small">
                               mdi-star
                             </v-icon>
                           </div>
-                          <h3 class="text-h6 mb-1">{{ slide.name }}</h3>
-                          <p class="text-subtitle-2 text-medium-emphasis">{{ slide.position }}</p>
+                          <h3 class="text-h6 mb-1">{{ testimonial.name }}</h3>
+                          <p class="text-subtitle-2 text-medium-emphasis">{{ testimonial.position }}</p>
                         </div>
                       </div>
                     </v-card-item>
@@ -75,11 +75,23 @@ const stats = [
   { value: 1, label: 'Years Experience' },
 ];
 
-const slide = {
-  quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  name: "Anonyme",
-  position: "Anonyme"
-}
+const slides = [
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Anonyme",
+    position: "Anonyme"
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Anonyme",
+    position: "Anonyme"
+  },
+  {
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Anonyme",
+    position: "Anonyme"
+  },
+]
 </script>
 
 <style scoped>
