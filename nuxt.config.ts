@@ -27,7 +27,6 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow' },
         { property: 'og:title', content: 'Jean Bacari - Ghostwriting' },
         { property: 'og:description', content: 'Jean Bacari - Ghostwriting' },
-        { property: 'og:image', content: '/images/og.png' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'fr_FR' },
         { property: 'og:site_name', content: 'Jean Bacari - Ghostwriting' },
