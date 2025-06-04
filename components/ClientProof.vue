@@ -74,6 +74,12 @@ const stats = [
   { value: 0, label: 'Satisfied Clients' },
   { value: 1, label: 'Years Experience' },
 ];
+
+const slide = {
+  quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  name: "Anonyme",
+  position: "Anonyme"
+}
 </script>
 
 <style scoped>
