@@ -13,7 +13,7 @@
         <v-col cols="12" md="8" lg="6">
           <v-card class="pricing-card glass-card" elevation="8" rounded="xl">
             <v-card-item class="text-center pa-6">
-              <div class="text-h4 font-weight-bold mb-2 text-white">Formule Premium</div>
+              <div class="text-h4 font-weight-bold mb-2 text-white">Starter Pack</div>
               <v-chip class="mb-2" size="small">
                 <v-icon start>mdi-star</v-icon>
                 -100€ dés 800€ pour les 5 premiers
@@ -42,7 +42,7 @@
                 </div>
                 <div class="d-flex align-center mb-3">
                   <v-icon color="accent" class="mr-2">mdi-check-circle</v-icon>
-                  <span class="text-body-1 text-white">Suivi des tendances</span>
+                  <span class="text-body-1 text-white">1 appel de suivi par mois</span>
                 </div>
                 <div class="d-flex align-center mb-3">
                   <v-icon color="accent" class="mr-2">mdi-check-circle</v-icon>
@@ -69,7 +69,7 @@
               </div>
 
               <v-btn color="primary" size="large" block class="mt-6" variant="elevated"
-                href="https://calendly.com/bacari-bm" target="_blank">
+                href="https://calendly.com/bacari-bm" target="_blank" aria-label="Je réserve un appel">
                 Je réserve un appel
                 <v-icon end>mdi-arrow-right</v-icon>
               </v-btn>

@@ -32,7 +32,7 @@
               </v-card-text>
             </v-card-item>
             <v-card-actions class="px-4 pb-4">
-              <v-btn variant="text" color="primary" class="text-capitalize" href="#cta">
+              <v-btn variant="text" color="primary" class="text-capitalize" href="#cta" aria-label="En savoir plus">
                 En savoir plus
                 <v-icon end>mdi-arrow-right</v-icon>
               </v-btn>

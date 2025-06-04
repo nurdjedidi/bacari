@@ -1,86 +1,31 @@
-# Ghostwriter - Service de Ghostwriting LinkedIn
+# Guide de Déploiement
 
-## Structure du Projet
+> ⚠️ À supprimer de GitHub après utilisation
 
-```
-project/
-├── components/                 # Composants Vue.js réutilisables
-│   ├── AppFooter.vue          # Footer simple en position absolue
-│   ├── ClientProof.vue        # Section témoignages clients
-│   ├── Cta.vue               # Section appel à l'action
-│   ├── Hero.vue              # Section d'accueil avec message principal
-│   ├── Pricing.vue           # Tarification avec formule unique
-│   └── Services.vue          # Présentation des services de ghostwriting
-│
-├── assets/                    # Ressources statiques
-├── plugins/                   # Plugins Nuxt.js
-├── public/                    # Fichiers publics statiques
-├── server/                    # API et routes serveur
-├── .nuxt/                     # Fichiers générés par Nuxt
-├── app.vue                    # Composant racine de l'application
-├── nuxt.config.ts            # Configuration Nuxt
-└── tsconfig.json             # Configuration TypeScript
-```
+## 1. Configuration GitHub
 
-## Déploiement sur Netlify
+1. Créez un compte sur [GitHub](https://github.com)
+2. Dans la barre latérale, cliquez sur "Repositories"
+3. Créez un nouveau repository avec le nom de votre choix
+4. Installez [Visual Studio Code](https://code.visualstudio.com)
+5. Ouvrez le dossier du projet dans VS Code
 
-### Prérequis
-- Un compte Netlify
+## 2. Installation des Dépendances
 
-### Étapes de déploiement
-
-Note: avoir vs code et node pour modifiez le projet est nécéssaire (ou un autre editeur)
-
-### Installation de Node.js et npm
-
-1. **Téléchargement**
-   - Allez sur [nodejs.org](https://nodejs.org/)
-   - Téléchargez la version LTS (Long Term Support)
-   - Exécutez l'installateur
-
-2. **Vérification de l'installation**
+1. Installez [Node.js](https://nodejs.org) si ce n'est pas déjà fait
+2. Ouvrez le terminal dans VS Code
+3. Exécutez les commandes suivantes :
    ```bash
-   node --version
-   npm --version
-
-3. **Initialisation de npm**
-   ```bash
-   npm init -y
-
-4. **Build du projet**
-   ```bash
+   npm init
    npm install
-   npm run build
    ```
+4. Copiez-collez les commandes Git fournies par GitHub
+5. Vérifiez que vos fichiers sont bien présents dans le repository
 
-5. **Déploiement par drag & drop**
-   - Allez sur [Netlify](https://app.netlify.com/)
-   - Connectez-vous à votre compte
-   - Glissez-déposez le dossier `.output/public` dans la zone de déploiement
-   - Votre site sera en ligne en quelques secondes !
+## 3. Déploiement sur Vercel
 
-### Commandes utiles
+1. Créez un compte sur [Vercel](https://vercel.com)
+2. Connectez votre repository GitHub
+3. Le déploiement se fera automatiquement !
 
-```bash
-# Développement local
-npm run dev
-
-# Build pour production
-npm run generate
-```
-
-## 🛠 Technologies utilisées
-
-- Nuxt.js 3
-- Vue.js 3
-- TypeScript
-- Netlify (hébergement)
-
-## 📝 Notes de développement
-
-- Le projet utilise Nuxt.js pour le SSR et le routing
-- Les composants sont organisés de manière modulaire
-- Le design est responsive et optimisé pour mobile
-- Le footer est en position absolue pour un design minimaliste
-
-Si besoin de modification, d'une aide ou autre, je suis disponible sur linkedin et par mail : djedidinur@gmail.com
+Votre site est en ligne !

@@ -7,10 +7,12 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="drawer = !drawer" class="d-flex d-md-none text-white"></v-app-bar-nav-icon>
       <div class="d-none d-md-flex">
-        <v-btn v-for="item in menuItems" :key="item.title" :href="item.href" variant="text" class="mx-1 text-white">
+        <v-btn v-for="item in menuItems" :key="item.title" :href="item.href" variant="text" class="mx-1 text-white"
+          aria-label="Accéder à la section {{ item.title }}">
           {{ item.title }}
         </v-btn>
-        <v-btn color="primary" variant="flat" class="ml-4" href="https://calendly.com/bacari-bm" target="_blank">
+        <v-btn color="primary" variant="flat" class="ml-4" href="https://calendly.com/bacari-bm" target="_blank"
+          aria-label="Réserver un appel">
           Je réserve un appel
         </v-btn>
       </div>
@@ -23,7 +25,10 @@
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item>
         <v-list-item class="pa-4">
-          <v-btn block color="accent" variant="flat" class="mt-4">Contact Us</v-btn>
+          <v-btn block color="accent" variant="flat" class="mt-4" href="https://calendly.com/bacari-bm" target="_blank"
+            aria-label="Réserver un appel">
+            Je réserve un appel
+          </v-btn>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>

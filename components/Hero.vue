@@ -12,7 +12,7 @@
           </p>
           <div class="d-flex justify-center mb-8">
             <v-btn color="#5355aa" size="large" class="px-6 py-3 text-white" href="https://calendly.com/bacari-bm"
-              target="_blank">
+              target="_blank" aria-label="Je réserve un appel">
               Je réserve un appel
             </v-btn>
           </div>
